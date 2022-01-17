@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edebe6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relative_login_design">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/login_border"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#c6beb0" >
+            <ImageView
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/new_email_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title_xml"
+        android:hint="Email"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/new_pass_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_username_xml"
+        android:hint="Password"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/new_pass2_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_pass_xml"
+        android:hint="Verify Password"
+        android:padding="10dp" />
+
+    <Button
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:background="#a79a85"
+        android:textColor="#010203"
+        android:id="@+id/new_info_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_pass_xml"
+        android:padding="10dp"
+        android:text="Create New Account" />
+
+    <Button
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:background="#a79a85"
+        android:textColor="#010203"
+        android:id="@+id/cancel_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_but_xml"
+        android:padding="10dp"
+        android:text="Cancel" />
+
+</LinearLayout>

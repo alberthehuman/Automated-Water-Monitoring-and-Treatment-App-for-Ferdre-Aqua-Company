@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ReportsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relative_design">
+
+        <LinearLayout
+            android:id="@+id/home_border"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#c6beb0" >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:padding="10dp"
+        android:text="Select Date"
+        android:id="@+id/cal_but_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:background="#a79a85"
+        android:textColor="#010203"/>
+
+<!--    <TextView-->
+<!--        android:padding="10dp"-->
+<!--        android:id="@+id/show_xml"-->
+<!--        android:layout_below="@+id/cal_but_xml"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="show"-->
+<!--        android:textSize="30sp" />-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycle_view_xml"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/cal_but_xml" />-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textColor="#39414f"
+            android:id="@+id/tv_reports_data_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

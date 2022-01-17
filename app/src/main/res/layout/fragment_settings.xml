@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#edebe6"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relative_design">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/home_border"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#c6beb0" >
+            <ImageView
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="#39414f"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DO Levels" />
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="#39414f"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/do_tv_xml"
+        android:text="0 - 10"
+        android:textSize="40sp" />
+
+    <me.bendik.simplerangeview.SimpleRangeView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/do_range_xml"
+        app:count="101"
+        app:movable="true"
+        app:lineColor="#39414f"
+        />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pH Levels"
+        android:textSize="15sp" />
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="#39414f"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ph_tv_xml"
+        android:text="0 - 10"
+        android:textSize="40sp" />
+
+    <me.bendik.simplerangeview.SimpleRangeView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ph_range_xml"
+        app:count="101"
+        app:movable="true"
+        app:lineColor="#39414f"/>
+
+    <Button
+        android:id="@+id/validate_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a79a85"
+        android:padding="10dp"
+        android:text="Apply"
+        android:textColor="#010203" />
+
+    <Button
+        android:id="@+id/logout_but_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a79a85"
+        android:padding="10dp"
+        android:text="Logout"
+        android:textColor="#010203" />
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#edebe6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/refreshlayout_xml"
+    tools:context=".GraphFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:textColor="#39414f"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/graph_do_xml"
+                android:text="DO Tracking"
+                android:textSize="30sp"/>
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/xml_graph"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:layout_below="@id/graph_do_xml"/>
+
+            <TextView
+                android:textColor="#39414f"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/graph_pH_xml"
+                android:layout_below="@id/xml_graph"
+                android:text="pH Tracking"
+                android:textSize="30sp"/>
+
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/xml_graph2"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                android:layout_below="@+id/graph_pH_xml"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

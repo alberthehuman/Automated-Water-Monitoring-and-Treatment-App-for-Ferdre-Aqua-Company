@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#edebe6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relative_login_design">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/login_border"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#c6beb0" >
+        <ImageView
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/dialog_username_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_login_design"
+        android:hint="Email"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_below="@+id/dialog_username_xml"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/dialog_pass_xml" />
+
+    <Button
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:background="#a79a85"
+        android:textColor="#010203"
+        android:id="@+id/login_but_xml"
+        android:layout_below="@+id/dialog_pass_xml"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <Button
+        android:outlineSpotShadowColor="@color/colorPrimaryDark"
+        android:background="#a79a85"
+        android:textColor="#010203"
+        android:layout_below="@+id/login_but_xml"
+        android:id="@+id/create_acc_xml"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an account" />
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:visibility="gone"/>-->
+
+
+</RelativeLayout>

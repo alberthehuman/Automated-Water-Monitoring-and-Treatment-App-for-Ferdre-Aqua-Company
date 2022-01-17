@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="#edebe6">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/relative_design">
+
+        <LinearLayout
+            android:id="@+id/home_border"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#c6beb0" >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/do_xml_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_design"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:text="Dissolved Oxygen Level"
+        android:textColor="#39414f"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/do_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/do_xml_id"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:text="..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#39414f"
+        android:id="@+id/ph_xml_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/do_data_xml_id"
+        android:padding="5dp"
+        android:text="pH Level"
+        android:textSize="15sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:id="@+id/ph_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ph_xml_id"
+        android:padding="5dp"
+        android:text="..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#39414f"
+        android:id="@+id/temp_xml_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ph_data_xml_id"
+        android:padding="5dp"
+        android:text="Temperature"
+        android:textSize="15sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:id="@+id/temp_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_xml_id"
+        android:padding="5dp"
+        android:text="..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#39414f"
+        android:id="@+id/lime_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp_data_xml_id"
+        android:padding="5dp"
+        android:text="Lime Tank"
+        android:textSize="15dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:id="@+id/lime_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lime_xml_id"
+        android:padding="5dp"
+        android:text="..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#39414f"
+        android:id="@+id/mix_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lime_data_xml_id"
+        android:padding="5dp"
+        android:text="Mixture"
+        android:textSize="15dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:id="@+id/mix_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mix_xml_id"
+        android:padding="5dp"
+        android:text="..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#39414f"
+        android:id="@+id/do_limit_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mix_data_xml_id"
+        android:padding="5dp"
+        android:text="DO Range"
+        android:textSize="15dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:id="@+id/do_limit_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/do_limit_xml_id"
+        android:padding="5dp"
+        android:text="..."
+        android:textSize="17sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#39414f"
+        android:id="@+id/ph_limit_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/do_limit_data_xml_id"
+        android:padding="5dp"
+        android:text="pH Range"
+        android:textSize="15dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#a79a85"
+        android:id="@+id/ph_limit_data_xml_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ph_limit_xml_id"
+        android:padding="5dp"
+        android:text="..."
+        android:textSize="17sp" />
+
+
+</RelativeLayout>
